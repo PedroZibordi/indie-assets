@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IndieAssets</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IndieAssets</title>
+  <link rel="stylesheet" href="./dist/style.css" />
 </head>
-<body>
+<body class="bg-gray-900 text-white font-sans">
 
-    <header>
-        <h1><img src="assets/logo.png" alt="IndieAssets Logo" class="logo"> IndieAssets</h1>
-        <p>Professional 2D asset packs for indie game developers.</p>
-    </header>
+  <!-- HEADER -->
+  <header class="bg-gray-800 text-center p-6">
+    <h1 class="text-3xl font-bold flex items-center justify-center gap-4">
+      <img src="assets/logo.png" alt="IndieAssets Logo" class="h-12 inline-block" />
+      IndieAssets
+    </h1>
+    <p class="mt-2 text-gray-300">Professional 2D asset packs for indie game developers.</p>
+  </header>
 
-    <section class="hero">
-        <h2>Get assets that make your game shine</h2>
-        <p>High-quality characters, environments, and UI kits – ready to plug and play.</p>
-        <a href="#interest" class="cta-button">I’m Interested</a>
-    </section>
+  <!-- HERO -->
+  <section class="text-center px-6 py-16 bg-gray-900">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-blue-400 mb-4">Get assets that make your game shine</h2>
+    <p class="text-lg text-gray-300 mb-6 max-w-xl mx-auto">High-quality characters, environments, and UI kits – ready to plug and play.</p>
+    <a href="#interest" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded transition">
+      I’m Interested
+    </a>
+  </section>
 
-    <section class="preview">
-        <h3>Preview Packs</h3>
-        <div class="packs">
-            <div class="pack">
-                <img src="assets/mockup-pack1.png" alt="Character Pack Preview">
-                <p>Fantasy Side-Scroller Character Pack</p>
-            </div>
-            <div class="pack">
-                <img src="assets/mockup-pack2.png" alt="Tileset Pack Preview">
-                <p>Forest Tileset Environment</p>
-            </div>
-        </div>
-    </section>
+  <!-- PREVIEW -->
+  <section class="bg-gray-800 py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-10">Preview Packs</h3>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-10">
+      <div class="max-w-xs">
+        <img src="assets/mockup-pack1.png" alt="Character Pack Preview" class="w-full rounded-xl shadow-lg mb-4">
+        <p class="text-gray-200">Fantasy Side-Scroller Character Pack</p>
+      </div>
+      <div class="max-w-xs">
+        <img src="assets/mockup-pack2.png" alt="Tileset Pack Preview" class="w-full rounded-xl shadow-lg mb-4">
+        <p class="text-gray-200">Forest Tileset Environment</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="interest">
-        <h3>Want early access?</h3>
-        <p>Leave your email and we’ll notify you when our first packs are live!</p>
-        <form action="https://formsubmit.co/YOUR-EMAIL@gmail.com" method="POST">
-            <input type="email" name="email" placeholder="your@email.com" required>
-            <button type="submit">Join the Beta</button>
-        </form>
-    </section>
+  <!-- FORMULÁRIO -->
+  <section id="interest" class="bg-gray-700 py-16 px-6 text-center">
+    <h3 class="text-2xl font-bold mb-4">Want early access?</h3>
+    <p class="text-gray-300 mb-6">Leave your email and we’ll notify you when our first packs are live!</p>
+    <form action="https://formsubmit.co/pedro.zibordi@hotmail.com" method="POST" class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <input type="email" name="email" placeholder="your@email.com" required
+             class="px-4 py-2 w-64 rounded bg-gray-900 text-white placeholder-gray-500 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-orange-500" />
+      <button type="submit" class="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded transition">
+        Join the Beta
+      </button>
+    </form>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 IndieAssets. All rights reserved.</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="bg-black text-center text-sm text-gray-500 py-6">
+    <p>&copy; 2025 IndieAssets. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
