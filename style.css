@@ -39,6 +39,7 @@ header {
 .preview {
     padding: 40px 20px;
     background-color: #222;
+    text-align: center;
 }
 
 .packs {
